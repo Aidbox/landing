@@ -1,0 +1,7 @@
+sudo: false
+language: node_js
+node_js:
+  - "5.0"
+script: gulp
+after_script:
+  - ./run-me-after-gulp-build-to-deploy
