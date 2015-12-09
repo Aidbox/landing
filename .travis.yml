@@ -1,7 +1,12 @@
 sudo: false
 language: node_js
 node_js:
-  - "5.0"
+- '5.0'
 script: gulp build
-after_script:
-  - ./run-me-after-gulp-build-to-deploy
+after_success:
+- chmod 600 id_rsa
+- mv id_rsa ~/.ssh/id_rsa
+- ./run-me-after-gulp-build-to-deploy
+before_install:
+- openssl aes-256-cbc -K $encrypted_dad6b913d4c7_key -iv $encrypted_dad6b913d4c7_iv
+  -in id_rsa.enc -out id_rsa -d
