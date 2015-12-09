@@ -4,8 +4,6 @@
 
 set -e # exit with nonzero exit code if anything fails
 
-# source ~/.nvm/nvm.sh && nvm use 5 && `npm bin`/gulp build
-
 # Go to the `build` directory and create a *new* Git repo.
 cd ./build/
 git init
