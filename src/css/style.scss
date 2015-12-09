@@ -1,0 +1,203 @@
+// normalize
+// @import "../bower_components/normalize-scss/_normalize.scss";
+
+// grids susy
+// @import "../bower_components/susy/sass/_susy.scss";
+// @import "../bower_components/compass-breakpoint/stylesheets/_breakpoint.scss";
+
+// bootstrap
+// @import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap-mincer.scss";
+// @import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+// @import "susy";
+@import "colors";
+@import "typography";
+@import "common";
+@import "media";
+
+.header {
+	padding-top: 50px;
+	background-color:#F9F9FA;
+  img {
+  }
+  .logo {
+    
+  }
+  .nav a {
+  	color: #4A4A4A;
+  	font-size: 22px;
+  	font-family: Gotham Pro;
+  	font-weight: 300;
+    padding-bottom:8px;
+    border-bottom: 1px dashed #BDBDBD;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.intro {
+  height: 520px;
+	background-color: #F9F9FA;
+  text-align: center;
+  // padding-bottom: 60px;
+  img {
+    padding: 60px 0 30px 0;
+  }
+  .intro-header {
+    font-family: Helvetica Neue;
+    font-size: 50px;
+    letter-spacing: 1.4px;
+    font-weight: 100;
+    padding-bottom: 6px;
+    color: #4A4A4A;
+  }
+  .intro-title {
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 40px;
+    color: #909AA7;
+  }
+}
+
+.try {
+  padding-top: 240px;
+  height: 650px;
+  background: $white url(../img/bg_banner.png) repeat-x;
+  background-position: bottom;
+  text-align: center;
+}
+
+// 3 STEPS FROM IDEA TO HEALTHCARE APP
+.steps {
+  text-align: center;
+  .header-text {
+    padding: 0 0 80px 0;
+  }
+  .steps-header {
+    font-family: Open Sans;
+    font-size: 28px;
+    line-height: 43px;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom:20px;
+  }
+  .steps-bodytext {
+    font-family: Open Sans;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 100;
+    color: #4A4A4A;
+    text-align: left;
+  }
+}
+
+
+// WHAT IS THE BOX ?
+.isbox {
+  height:1140px;
+  padding-top: 190px;
+  background: $white url(../img/bg_illustration.png) repeat-x;
+  .header-text {
+    padding: 0 0 25px;
+  }
+  .isbox-bodytext {
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 0.4px;
+    color: #909AA7;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 0 10px;
+
+  }
+}
+
+// HOW USE THE BOX ?
+.usebox {
+  .header-text {
+    padding:80px 0 40px 0;
+  }
+  .use-box {
+    padding: 40px;
+    img {
+      // padding-right: 10px;
+    }
+  }
+  .use-header {
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: left;
+    padding-bottom:10px;
+    padding-left:40px;
+  }
+  .use-bodytext {
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 30px;
+    text-align: left;
+    padding-left:40px;
+    color: #909AA7;
+  }
+}
+
+// WHO AND WHY USE BOX ?
+.whybox {
+  padding-top: 100px;
+  .why-box,
+  .why-box-flipped {
+    background: $white url(../img/rectangle.png) no-repeat;
+    height: 200px;
+    width: 800px;
+    padding: 40px 0 0 64px;
+    margin-bottom: 16px;
+  }
+  .why-box-flipped {
+    background: $white url(../img/rectangle_fliped.png) no-repeat;
+  }
+  
+  .why-header,
+  .why-bodytext {
+    font-family: Open Sans;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 100;
+    margin: 0;
+
+  }
+  .why-bodytext {
+    font-size: 24px;
+  }
+
+  .name,
+  .name-flipped {
+    font-family: Open Sans;
+    font-size: 20px;
+    margin-left: 30px;
+    color: #4A4A4A;
+  }
+  .name-flipped {
+    margin-left: -30px;
+  }
+}
+
+.nextgen {
+  padding-top: 150px;
+  .header-text {
+    padding:10px 0 34px;
+  }
+}
+
+.footer {
+  padding-top:150px;
+  .hs {
+    font-family: Gotham Pro;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+    padding: 140px 50px 0 0;
+  }
+}
