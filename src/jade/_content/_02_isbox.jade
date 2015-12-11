@@ -1,7 +1,10 @@
 .isbox
-  .container
-    h2.header-text What is the box ?
-    h3.isbox-bodytext Focus on your Idea and don’t worry about
-      br 
-      | database, API and infrastructure!
-    img.img-responsive(src="img/illustration.png", alt="")
+	.container
+		.row.text-center
+			h2.header-text What is the box ?
+			span.isbox-bodytext.pseudoline Focus on your Idea and don’t worry about
+			span.isbox-bodytext.pseudoline database, API and infrastructure!
+		.row.cloud
+			img.img-responsive.center-block(src="img/illustration.png", alt="")
+		.row.list
+			include ./_hidden-container.jade

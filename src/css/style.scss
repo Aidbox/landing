@@ -35,6 +35,7 @@
   }
 }
 
+// INTRO
 .intro {
   height: 520px;
 	background-color: #F9F9FA;
@@ -60,6 +61,7 @@
   }
 }
 
+// TRY NOW
 .try {
   padding-top: 240px;
   height: 650px;
@@ -72,7 +74,10 @@
 .steps {
   text-align: center;
   .header-text {
-    padding: 0 0 80px 0;
+    padding-bottom: 80px;
+  }
+  .hack {
+    padding-top: 46px;
   }
   .steps-header {
     font-family: Open Sans;
@@ -95,11 +100,17 @@
 
 // WHAT IS THE BOX ?
 .isbox {
-  height:1140px;
-  padding-top: 190px;
-  background: $white url(../img/bg_illustration.png) repeat-x;
+  height:1150px;
+  padding-top: 200px;
+  background: $white url(../img/bg-illustration.png) repeat-x;
   .header-text {
-    padding: 0 0 25px;
+    padding-bottom: 25px;
+  }
+  .list{
+    display: none;
+  }
+  .cloud {
+    display: show;
   }
   .isbox-bodytext {
     font-family: Open Sans;
@@ -110,7 +121,6 @@
     line-height: 40px;
     text-align: center;
     padding: 0 0 10px;
-
   }
 }
 
@@ -121,9 +131,6 @@
   }
   .use-box {
     padding: 40px;
-    img {
-      // padding-right: 10px;
-    }
   }
   .use-header {
     font-family: Open Sans;
@@ -135,7 +142,7 @@
   }
   .use-bodytext {
     font-family: Open Sans;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 100;
     line-height: 30px;
     text-align: left;
@@ -147,43 +154,41 @@
 // WHO AND WHY USE BOX ?
 .whybox {
   padding-top: 100px;
-  .why-box,
-  .why-box-flipped {
-    background: $white url(../img/rectangle.png) no-repeat;
-    height: 200px;
-    width: 800px;
-    padding: 40px 0 0 64px;
+  .why-box {
+    background: #F9F9FA;
+    padding: 20px 40px 35px;
     margin-bottom: 16px;
-  }
-  .why-box-flipped {
-    background: $white url(../img/rectangle_fliped.png) no-repeat;
+    border-radius: 40px;
   }
   
   .why-header,
   .why-bodytext {
     font-family: Open Sans;
-    font-size: 30px;
+    font-size: 27px;
+    padding-bottom: 6px;
     text-align: left;
     font-weight: 100;
     margin: 0;
-
+  }
+  
+  .why-header {
+    border-bottom: 1px dashed #C5C5C5;
+    padding-bottom: 8px;
   }
   .why-bodytext {
-    font-size: 24px;
+    font-size: 18px;
+    padding-top: 10px;
   }
-
-  .name,
-  .name-flipped {
+  
+  .name {
     font-family: Open Sans;
     font-size: 20px;
     margin-left: 30px;
     color: #4A4A4A;
   }
-  .name-flipped {
-    margin-left: -30px;
-  }
 }
 
+// NEXT GENERATION
 .nextgen {
   padding-top: 150px;
   .header-text {
@@ -191,13 +196,36 @@
   }
 }
 
+// FOOTER
 .footer {
   padding-top:150px;
+  .hs-hidden {
+    display: none;
+  }
+  .pseudoline {
+    display: block;
+  }
   .hs {
+    padding:80px 40px 0 0;
     font-family: Gotham Pro;
-    font-size: 30px;
+    font-size: 27px;
     text-align: center;
     font-weight: 100;
-    padding: 140px 50px 0 0;
+    .links  {
+      .icon-link {
+        color: black;
+        font-size: 42px;
+        padding: 0 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .copyright {
+    padding-top: 5px;
+  }
+  .hs-team {
+    font-weight: 500;
+    padding-bottom: 3px;
+    border-bottom: 1px dashed #686868;
   }
 }
