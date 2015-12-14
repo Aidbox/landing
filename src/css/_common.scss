@@ -1,7 +1,7 @@
 .btn {
   position: relative;
-  background-color:#424952;
-  font-family: Gotham Pro;
+  background-color:$blue-darkgray;
+  font-family: 'Gotham', Arial, sans-serif;
   text-transform: uppercase;
   box-shadow: 0 2px 5px rgba(0,0,0,0.5);
   border-radius: 0;
@@ -10,14 +10,13 @@
   
   .btn-try {
     text-align: left;
-    color: #FDCD00;
+    color: $deep-yellow;
     font-size: 28px;
-    font-weight: 100;
     padding-right: 70px;
     text-decoration: none;
 
     &:hover {
-      color: #FDCD00;
+      color: $deep-yellow;
       // text-decoration: none;
     }
   }
@@ -27,21 +26,19 @@
     right: 0;
     top: 0;
 
-    background-color:#FDCD00;
+    background-color:$deep-yellow;
     padding: 25px 31px;
-    outline: 1px solid #FDCD00;
+    outline: 1px solid $deep-yellow;
   }
 }
 
 // HEADER
 .header-text {
-  font-family: Helvetica Neue,"HelveticaNeueLight","Helvetica",Helvetica,Arial,sans-serif;
-  // "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'HelveticaNeueLight', Helvetica, Arial, 'Lucida Grande', sans-serif;
   font-size: 42px;
-  color: #4A4A4A;
+  color: $dark-gray;
   text-align: center;
   line-height: 40px;
-  font-weight: 100;
   letter-spacing: 1.4px;
   padding:15px 0 60px;
 

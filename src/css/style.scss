@@ -1,63 +1,58 @@
-// normalize
-// @import "../bower_components/normalize-scss/_normalize.scss";
-
-// grids susy
-// @import "../bower_components/susy/sass/_susy.scss";
-// @import "../bower_components/compass-breakpoint/stylesheets/_breakpoint.scss";
-
-// bootstrap
-// @import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap-mincer.scss";
-// @import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-
-// @import "susy";
-@import "colors";
+@import "../bower_components/normalize-scss/_normalize.scss";
 @import "typography";
+@import "colors";
 @import "common";
 @import "media";
+@import "animation";
 
 .header {
 	padding-top: 50px;
-	background-color:#F9F9FA;
+	background-color:$light-gray;
   img {
   }
   .logo {
     
   }
   .nav a {
-  	color: #4A4A4A;
+  	color: $dark-gray;
   	font-size: 22px;
-  	font-family: Gotham Pro;
-  	font-weight: 300;
+  	font-family: 'GothamRegular', Arial, sans-serif;
     padding-bottom:8px;
-    border-bottom: 1px dashed #BDBDBD;
+    border-bottom: 1px dashed $gray-dashed;
     text-decoration: none;
     cursor: pointer;
   }
+  .nav-menu {
+    display: none;
+  }
+
 }
 
 // INTRO
 .intro {
   height: 520px;
-	background-color: #F9F9FA;
+	background-color: $light-gray;
   text-align: center;
   // padding-bottom: 60px;
-  img {
+  .intro-img {
     padding: 60px 0 30px 0;
+
+    animation-duration: 1s; // animation duration
+    animation-delay: 1s; // delay animation
+    // animation-iteration-count: 2; // looping -infinite
   }
   .intro-header {
-    font-family: Helvetica Neue;
+    font-family: 'HelveticaNeueLight', Helvetica, Arial, 'Lucida Grande', sans-serif;
     font-size: 50px;
     letter-spacing: 1.4px;
-    font-weight: 100;
     padding-bottom: 6px;
-    color: #4A4A4A;
+    color: $dark-gray;
   }
   .intro-title {
-    font-family: Open Sans;
+    font-family: 'OpenSansLight', sans-serif;
     font-size: 30px;
-    font-weight: 100;
     line-height: 40px;
-    color: #909AA7;
+    color: $blue-gray;
   }
 }
 
@@ -80,19 +75,17 @@
     padding-top: 46px;
   }
   .steps-header {
-    font-family: Open Sans;
+    font-family: 'OpenSansLight', sans-serif;
     font-size: 28px;
     line-height: 43px;
-    font-weight: 100;
     text-align: center;
     padding-bottom:20px;
   }
   .steps-bodytext {
-    font-family: Open Sans;
+    font-family: 'OpenSansLight', sans-serif;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 100;
-    color: #4A4A4A;
+    color: $dark-gray;
     text-align: left;
   }
 }
@@ -113,11 +106,10 @@
     display: show;
   }
   .isbox-bodytext {
-    font-family: Open Sans;
+    font-family: 'OpenSansLight', sans-serif;
     font-size: 30px;
-    font-weight: 100;
     letter-spacing: 0.4px;
-    color: #909AA7;
+    color: $blue-gray;
     line-height: 40px;
     text-align: center;
     padding: 0 0 10px;
@@ -133,21 +125,19 @@
     padding: 40px;
   }
   .use-header {
-    font-family: Open Sans;
+    font-family: 'OpenSansLight', sans-serif;
     font-size: 30px;
-    font-weight: 100;
     text-align: left;
     padding-bottom:10px;
     padding-left:40px;
   }
   .use-bodytext {
-    font-family: Open Sans;
+    font-family: 'OpenSansLight', sans-serif;
     font-size: 21px;
-    font-weight: 100;
     line-height: 30px;
     text-align: left;
     padding-left:40px;
-    color: #909AA7;
+    color: $blue-gray;
   }
 }
 
@@ -155,7 +145,7 @@
 .whybox {
   padding-top: 100px;
   .why-box {
-    background: #F9F9FA;
+    background: $light-gray;
     padding: 20px 40px 35px;
     margin-bottom: 16px;
     border-radius: 40px;
@@ -163,16 +153,15 @@
   
   .why-header,
   .why-bodytext {
-    font-family: Open Sans;
+    font-family: 'OpenSansLight', sans-serif;
     font-size: 27px;
     padding-bottom: 6px;
     text-align: left;
-    font-weight: 100;
     margin: 0;
   }
   
   .why-header {
-    border-bottom: 1px dashed #C5C5C5;
+    border-bottom: 1px dashed $gray-dashed;
     padding-bottom: 8px;
   }
   .why-bodytext {
@@ -181,10 +170,10 @@
   }
   
   .name {
-    font-family: Open Sans;
+    font-family: 'OpenSansLight', sans-serif;
     font-size: 20px;
     margin-left: 30px;
-    color: #4A4A4A;
+    color: $dark-gray;
   }
 }
 
@@ -207,13 +196,12 @@
   }
   .hs {
     padding:80px 40px 0 0;
-    font-family: Gotham Pro;
+    font-family: 'Gotham', Arial, sans-serif;
     font-size: 27px;
     text-align: center;
-    font-weight: 100;
     .links  {
       .icon-link {
-        color: black;
+        color: $black;
         font-size: 42px;
         padding: 0 20px;
         margin-bottom: 20px;
@@ -224,8 +212,8 @@
     padding-top: 5px;
   }
   .hs-team {
-    font-weight: 500;
+    font-family: 'GothamMedium', Arial, sans-serif;
     padding-bottom: 3px;
-    border-bottom: 1px dashed #686868;
+    border-bottom: 1px dashed $darkgray-dashed;
   }
 }

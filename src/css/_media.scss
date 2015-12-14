@@ -1,3 +1,7 @@
+/* IE10+ VIEWPORT FIX */
+@-ms-viewport { width: device-width; }
+@viewport { width: device-width; }
+
 // 1200
 @media (max-width: 1200px) {
   .steps {
@@ -19,8 +23,11 @@
 
 // 992
 @media (max-width: 992px) {
-  .nav {
-    display: none;
+  .nav a {
+    // display: none;
+  }
+  a.nav-menu {
+    // display: block !important;
   }
   .nav-btn {
 		display: show;
@@ -123,16 +130,15 @@
 	    padding-top: 22px;
 	  }
 	  .hidden-title {
-	  	font-family: Open Sans;
+	  	font-family: 'OpenSansSemibold', sans-serif;
 		font-size: 18px;
 		font-weight: 500;
 		line-height: 10px;
 		padding-top: 10px;
 	  }
 	  .hidden-bodytext {
-		font-family: Open Sans;
+		font-family: 'OpenSansLight', sans-serif;
 		font-size: 15px;
-		font-weight: 100;
 	  }
 	}
   }
@@ -160,10 +166,9 @@
   	.hs-hidden {
 		display: block !important;
 		padding-top:80px;
-    	font-family: Gotham Pro;
+    	font-family: 'Gotham', Arial, sans-serif;
     	font-size: 27px;
     	text-align: center;
-    	font-weight: 100;
    		.links  {
       		.icon-link {
         		color: black;
@@ -173,9 +178,9 @@
       	}
       }
       .hs-team {
-	    font-weight: 500;
+      	font-family: 'GothamMedium', Arial, sans-serif;
 	    padding-bottom: 50px;
-	    border-bottom: 1px dashed #DCDCDC !important;
+	    border-bottom: 1px dashed $light-dashed !important;
 	  }
 	}
 	.copyright {
@@ -217,16 +222,19 @@
   
   .header {
   	.logo {
-			padding-left: 20px;
+		padding-left: 20px;
   	}
-	  .nav {
-	    display: show;
-	  }
+	.nav a {
+      display: none;
+  	}
+  	a.nav-menu {
+      display: block !important;
+  	  margin-right: 20px;
+  	}
   }
 
   // INTRO 
   .intro {
-  	
   	padding: 0 20px;
   	
   	img { 
@@ -312,16 +320,14 @@
 	    padding-top: 22px;
 	  }
 	  .hidden-title {
-	  	font-family: Open Sans;
+	  	font-family: 'OpenSansSemibold', sans-serif;
 		font-size: 18px;
-		font-weight: 500;
 		line-height: 10px;
 		padding-top: 10px;
 	  }
 	  .hidden-bodytext {
-		font-family: Open Sans;
+		font-family: 'OpenSansLight', sans-serif;
 		font-size: 15px;
-		font-weight: 100;
 	  }
 	}
 
@@ -378,7 +384,7 @@
 			}
 			.why-bodytext {
 				text-align: left;
-				background-color: #F9F9FA;
+				background-color: $light-gray;
 			}
 		} 
 

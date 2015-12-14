@@ -1,10 +1,10 @@
 {
-  "name": "samurai",
-  "version": "0.0.0",
+  "name": "aidbox",
+  "version": "0.0.1",
   "dependencies": {},
   "devDependencies": {
-    "susy": "~2.2.6",
-    "compass-breakpoint": "~2.6.1",
-    "normalize-scss": "~3.0.3"
+    "normalize-scss": "~3.0.3",
+    "animatewithsass": "~3.2.2",
+    "wow": "wow.js#~1.1.2"
   }
 }
