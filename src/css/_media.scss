@@ -241,16 +241,16 @@
   		width: 160px;
   	}
   	.intro-header {
-			font-size: 40px !important;
+		font-size: 40px !important;
   		line-height: 45px;
   	}
   	.intro-title {
   		display: inline;
-			font-size: 21px !important;
-			line-height: 24px !important;
-  		.pseudoline {
-  			display: inline;
-  		}
+		font-size: 21px !important;
+		line-height: 24px !important;
+  	.pseudoline {
+  		display: inline;
+  	  }
   	}
   }
 
@@ -258,10 +258,7 @@
 	.try {
 	  padding-top: 100px !important;
 	  background: $white url(../img/bg_banner_min.png) repeat-x !important;
-		height: 300px !important;
-		.btn {
-			width: 350px;
-		}
+	  height: 300px !important;
 	}
 
 	// STEPS
@@ -269,8 +266,8 @@
 		padding: 0 15px;
 		.header-text {
 			font-size: 36px !important;
-  		line-height: 42px;
-  		padding-bottom: 40px !important;
+  			line-height: 42px;
+  			padding-bottom: 40px !important;
 		}
 		.hack {
     		padding-top: 0px !important;
@@ -288,6 +285,7 @@
 			}
 		}
 	}
+
 	// IS BOX
 	.isbox {
 		height:800px !important;
@@ -399,8 +397,186 @@
 		.header-text {
 			font-size: 31px;
 		}
-		.btn {
-			width: 350px;	
+	}
+	
+	// COMMON
+	.btn {
+		width: 80%;
+		padding-left: 30px;
+		.btn-try {
+		padding:0px !important;
 		}
+		a {
+		font-size: 21px !important;
+		}
+		.arrow {
+		padding: 20px 25px;
+		outline: 1px solid $deep-yellow;
+		}
+    }
+}
+
+// 320
+@media (max-width: 320px) {
+	.header {
+	  	.logo {
+			padding-left: 20px;
+			width: 200px;
+	  	}
+		.nav a {
+	      display: none;
+	  	}
+	  	a.nav-menu {
+	      display: block !important;
+	  	  margin-right: 20px;
+	  	}
+  	}
+	
+	// INTRO
+	.intro {
+		height: 440px !important;
+  		img { 
+  		width: 140px;
+  		padding: 40px 0 !important;
+  		}
+  		.intro-header {
+		font-size: 30px !important;
+  		line-height: 34px;
+  		}
+  		.intro-title {
+  		display: inline;
+		font-size: 17px !important;
+		line-height: 21px !important;
+  		.pseudoline {
+  			display: inline;
+  	  }
+  	}
+  }
+  .try {
+  	height: 0px !important;
+	padding-top: 100px !important;
+	background: $white url(../img/bg_banner_min.png) repeat-x !important;
+	height: 300px !important;
+  }
+
+    // STEPS
+	.steps {
+		padding: 0 15px;
+		.header-text {
+		  font-size: 28px !important;
+  		  line-height: 36px;
+  		  padding-top: 0px !important;
+		}
+  		.steps-img {
+  			padding-top: 10px !important;
+  			img {
+  				width: 140px;
+  			}
+  		}
+		.steps-header {
+			font-size: 21px !important;
+			padding-bottom: 10px !important;
+		}
+		.steps-bodytext { 
+			padding: 0 !important;
+			font-size: 16px !important;
+			line-height: 21px !important;
+			color: $blue-gray !important;
+		}
+		.steps-box {
+			padding-bottom: 50px;
+			&:last-child {
+				padding-bottom: 0px;
+			}
+		}
+	}
+	
+	// ISBOX 
+	.isbox {
+		padding-top: 120px !important;
+		.header-text {
+			padding-bottom: 0px !important;
+		}
+		.isbox-bodytext {
+			font-size: 16px !important;
+			line-height: 20px !important;
+		}
+	}
+	// HIDDEN CONTAINER
+	.hidden-container {
+	  padding: 0 !important;
+	  .mini-img {
+	    padding-top: 28px;
+	  }
+	  .hidden-bodytext {
+		font-size: 14px;
+	  }
+	}
+
+	// USE BOX
+	.usebox {
+		padding: 0 !important;
+		.header-text {
+			padding: 0 !important;
+		}
+		.use-img {
+			width: 100px !important;
+		}
+		.use-header {
+			font-size: 24px !important;
+		}
+		.use-bodytext {
+			font-size: 18px !important;
+			padding: 0 20px !important;
+		}
+	}
+
+	// WHY BOX 
+	.whybox {
+		.why-box {
+			padding:20px 30px !important;
+		}
+		.header-text {
+			padding: 0 10px 10px !important;
+		}
+		.why-header,
+  		.why-bodytext { 
+  		  font-size: 17px !important;
+  	  }
+	}
+
+	// NEXTGEN
+	.nextgen {
+		padding-top: 30px !important;
+		.computer {
+			width: 240px !important;
+		}
+	}
+
+	// FOOTER
+	.footer {
+		.hs-hidden {
+			padding-top: 60px;
+			.links {
+				.icon-link {
+				padding: 16px !important;
+				}
+			}
+			.copyright,
+			.hs-team {
+			font-size: 24px !important;
+			}
+		}
+
+		.hs-logo {
+			width: 160px;
+			padding-top: 40px;
+		}
+	}
+
+	// COMMON
+	.header-text {
+		font-size: 28px !important;
+		line-height: 32px !important;
 	}
 }
